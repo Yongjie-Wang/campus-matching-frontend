@@ -77,7 +77,6 @@ const doSearchResult = () => {
 
     const name = user.username;
     const  ws = new WebSocket("ws://localhost:8081/api/chat");
-    // const ws = new WebSocket("ws://124.221.242.250:8081/api/chat");
     ws.onopen = () => {
         console.log("Socket 已连接");
     }
